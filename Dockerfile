@@ -20,7 +20,7 @@ ENV RBENV_ROOT /usr/local/rbenv
 ENV PATH "$RBENV_ROOT/bin:$RBENV_ROOT/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 # install ruby
-RUN rbenv install 2.1.8 && rbenv global 2.1.8 && rbenv rehash && gem install bundler
+RUN rbenv install 2.4.1 && rbenv global 2.4.1 && rbenv rehash && gem install bundler
 
 # install nodejs
 RUN curl -sL https://rpm.nodesource.com/setup_6.x | bash - && yum install -y nodejs
